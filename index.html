@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLB26: Rise to the Bigs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hero-panel" aria-labelledby="game-title">
+        <div class="scorebug" aria-label="Game phase">
+          <span>MLB26</span>
+          <strong id="phase-label">Pre-Draft</strong>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">A cinematic baseball life simulator</p>
+          <h1 id="game-title">Rise to the Bigs</h1>
+          <p class="tagline">
+            Control one player’s journey from anonymous prospect to baseball legend —
+            through workouts, interviews, family pressure, rivalries, romance, sponsorships,
+            and every clutch Road-to-the-Show moment in between.
+          </p>
+        </div>
+
+        <div class="player-card" aria-label="Player profile">
+          <div class="portrait" aria-hidden="true">26</div>
+          <div>
+            <p class="card-kicker">Unknown Prospect</p>
+            <h2 id="player-archetype">The Humble Leader</h2>
+            <p id="legacy-copy">
+              Scouts love your poise, but every answer and every swing can rewrite the board.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Career dashboard">
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>Draft Stock</span>
+            <strong id="draft-stock">62</strong>
+            <meter id="draft-meter" min="0" max="100" value="62">62%</meter>
+          </article>
+          <article class="stat-card">
+            <span>Reputation</span>
+            <strong id="reputation">Balanced</strong>
+            <meter id="rep-meter" min="0" max="100" value="52">52%</meter>
+          </article>
+          <article class="stat-card">
+            <span>Clubhouse Trust</span>
+            <strong id="trust">48</strong>
+            <meter id="trust-meter" min="0" max="100" value="48">48%</meter>
+          </article>
+          <article class="stat-card">
+            <span>Pressure</span>
+            <strong id="pressure">41</strong>
+            <meter id="pressure-meter" min="0" max="100" value="41">41%</meter>
+          </article>
+        </div>
+
+        <article class="story-card" aria-live="polite">
+          <div class="chapter-meta">
+            <span id="chapter-tag">Chapter 1</span>
+            <span id="location">Showcase tunnel · Phoenix</span>
+          </div>
+          <h2 id="scene-title">The Scout Day Walkout</h2>
+          <p id="scene-copy">
+            A camera crew follows you from the batting cage to a hallway full of scouts.
+            Your agent whispers that three clubs are watching your body language as closely
+            as your exit velocity. Your phone buzzes: Mom says to stay grounded. Your rival
+            posts a highlight reel with your name tagged.
+          </p>
+        </article>
+
+        <section class="choice-panel" aria-label="Story choices">
+          <button class="choice" data-choice="leader">
+            <span>Stay humble</span>
+            Thank your family, take extra grounders, and let the scouts see discipline.
+          </button>
+          <button class="choice" data-choice="flash">
+            <span>Own the spotlight</span>
+            Promise a franchise-changing career and post your best swing online.
+          </button>
+          <button class="choice" data-choice="edge">
+            <span>Answer the rival</span>
+            Challenge him publicly, fuel the drama, and turn pressure into attention.
+          </button>
+        </section>
+
+        <aside class="feed" aria-label="Dynamic reactions">
+          <h2>Live Reactions</h2>
+          <ul id="reaction-feed">
+            <li><strong>Agent:</strong> “Every club has a different appetite for confidence. Pick your lane.”</li>
+            <li><strong>Mom:</strong> “The player matters, but the person matters more.”</li>
+            <li><strong>Rival:</strong> “See you under the lights.”</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
